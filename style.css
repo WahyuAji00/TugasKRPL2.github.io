@@ -339,7 +339,7 @@ header {
 
   .Bagian2 {
     width: 85%;
-    height: 2980px;
+    height: 3000px;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
@@ -404,18 +404,21 @@ header {
     transform: translateY(10%);
   }
 
+  .Video2 {
+    transform: translateY(5%);
+
   .FotoLebaran div{
     background-color: red;
     border: 2px solid black;
     display: inline-block;
     width: 90%;
-    height: 230px;
+    height: 210px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
 
   .FotoLebaran{
-    transform: translateY(15%);
+    transform: translateY(25%);
   }
 }
 
@@ -529,7 +532,7 @@ header {
 
   .Bagian2 {
     width: 85%;
-    height: 3000px;
+    height: 3100px;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
@@ -586,7 +589,7 @@ header {
     border: 2px solid black;
     display: inline-block;
     width: 90%;
-    height: 230px;
+    height: 250px;
     border-radius: 10px;
   }
 
@@ -599,13 +602,13 @@ header {
     border: 2px solid black;
     display: inline-block;
     width: 90%;
-    height: 230px;
+    height: 210px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
 
   .FotoLebaran{
-    transform: translateY(20%);
+    transform: translateY(30%);
   }
 
   .FotoLebaran div img{
@@ -728,7 +731,7 @@ header {
 
   .Bagian2 {
     width: 85%;
-    height: 3150px;
+    height: 3200px;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
@@ -807,13 +810,13 @@ header {
     border: 2px solid black;
     display: inline-block;
     width: 90%;
-    height: 255px;
+    height: 235px;
     margin-bottom: 20px;
     border-radius: 10px;
   }
 
   .FotoLebaran{
-    transform: translateY(45%);
+    transform: translateY(55%);
   }
 
   .FotoLebaran div img{
