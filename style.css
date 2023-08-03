@@ -339,7 +339,7 @@ header {
 
   .Bagian2 {
     width: 85%;
-    height: 3070px;
+    height: 3100px;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
@@ -402,6 +402,10 @@ header {
 
   .VideoLebaran{
     transform: translateY(10%);
+  }
+
+  .Video2 {
+    transform: translateY(5%);
   }
 
   .FotoLebaran div{
