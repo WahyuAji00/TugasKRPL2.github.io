@@ -1,0 +1,963 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url(ChillBackground.jpg);
+  background-size: cover;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: right;
+}
+
+.JudulHalaman {
+  text-align: center;
+  font-weight: bold;
+}
+
+.TeksBerjalan {
+  background-color: darkblue;
+  padding: 5px 0px;
+  color: white;
+  font-weight: bold;
+}
+
+.Jadwal {
+  display: none;
+  width: 70%;
+  height: 260px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 60px;
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+}
+
+.Tombol1 {
+  color: white;
+  font-size: large;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 10px;
+  background-color: blue;
+  width: 250px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid red;
+  border-radius: 40px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.Tombol1:hover {
+    background-color: white;
+    color: blue;
+    border: 3px solid black;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+#jadwalContainer {
+  position: relative;
+  height: 100vh;
+}
+
+.tabelJadwal {
+  right: 250px;
+  bottom: 100px;
+  font-size: 30px;
+  transform: translateY(100%);
+}
+
+.jadwalTabel {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translate(-50%, -65%);
+  width: 800px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.Tombol2 {
+  position: absolute;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  top: 30px; 
+  right: 50px;
+  font-size: 20px;
+  width: 25px;
+  border-radius: 10px;
+}
+
+.Tombol2:hover {
+  background-color: white;
+  color: black;
+  transition: background-color .2s ease-in-out;
+}
+
+.Bagian2 {
+  display: block;
+  width: 90%;
+  height: 1500px;
+  padding: 10px;
+  text-align: center;
+  margin-top: 50px;
+  border: 4px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  margin-bottom: 40px;
+}
+
+.NamaSiswa {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+.NamaSiswa div{
+  width: 250px;
+  height: auto;
+  background-color: red;
+  border: 3px solid black;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.NamaSiswa div ul li{
+  text-align: left;
+}
+
+.JadwalPiket{
+  width: 100%;
+  height: 300px;
+  display: block;
+}
+
+.JadwalPiket div{
+  display: inline-block;
+  width: 250px;
+  height: 200px;
+  background-color: red;
+  border: 3px solid black;
+}
+
+.JadwalPiket div h4{
+  margin-top: 18px;
+  margin-bottom: -5px;
+  border-bottom: 1px solid black;
+}
+
+.JadwalPiket div ul li{
+  margin-left: 10px;
+  text-align: left;
+  margin-right: 25px;
+}
+
+::-webkit-scrollbar {
+  width: 13px;
+  background-color: darkblue;
+  background-size: cover;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(184, 184, 184);
+  border-radius: 15px;
+  border: 3px solid darkblue;
+}
+
+.VideoLebaran{
+  width: 100%;
+  height: 400px;
+}
+
+.VideoLebaran div{
+  background-color: red;
+  border: 2px solid black;
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+}
+
+.VideoLebaran div h3{
+  transform: translate(0%, -80%);
+}
+
+.VideoLebaran div video {
+  width: 90%;
+  height: auto;
+  margin-top: 30px;
+}
+
+.FotoLebaran{
+  width: 100%;
+  height: 400px;
+}
+
+.FotoLebaran div{
+  background-color: red;
+  border: 2px solid black;
+  display: inline-block;
+  width: 40%;
+  height: 90%;
+}
+
+.FotoLebaran div h3{
+  transform: translate(0%, -55%);
+}
+
+.FotoLebaran div img {
+  width: 90%;
+  height: auto;
+  margin-top: 30px;
+}
+
+/*Ini Media Query Handphone*/
+@media screen and (max-width: 767px) {
+  .JudulHalaman {
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  header {
+    height: 35px;
+  }
+
+  .TeksBerjalan {
+    font-size: 12px;
+  }
+  
+  audio {
+    width: 55%;
+    height: 25px;
+  }
+
+  .Musik {
+    height: 5px
+  }
+
+  .MusikHP {
+    transform: translateY(-200%);
+  }
+
+  .MusikTablet {
+    display: none;
+  }
+
+  .MusikLaptop {
+    display: none;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #ddff56;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+  
+  audio::-webkit-media-controls-pause-button {
+    display: block;
+    width: 5px;
+    height: 20px;
+    background-color: #ddff56;
+    border-radius: 30%;
+    cursor: pointer;
+  }
+
+  .Tombol1 {
+    color: white;
+    font-size: small;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    background-color: blue;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid red;
+    border-radius: 40px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  }
+
+  .Tombol1:hover {
+    background-color: white;
+    color: blue;
+    border: 3px solid black;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .Tombol2 {
+    transform: translate(120%, -50%);
+    font-size: smaller;
+  }
+
+  #jadwalContainer {
+    height: 250px;
+    width: 85%;
+  }
+
+  .jadwalTabel {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    transform: translate(-50%, -290%);
+    width: 90%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    font-size: small;
+  }
+
+  .tabelJadwal {
+    font-size: medium;
+    transform: translateY(30%);
+  }
+
+  .Bagian2 {
+    width: 85%;
+    height: 3175px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .NamaSiswa div{
+    width: 80%;
+    height: auto;
+    background-color: red;
+    border: 3px solid black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }  
+
+  .NamaSiswa div ul li{
+    text-align: left;
+    font-size: 90%;
+  }
+
+  .JadwalPiket{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    transform: translateY(10%);
+  }
+
+  .JadwalPiket div{
+      display: inline-block;
+      width: 85%;
+      height: auto;
+      border: 3px solid black;
+      margin-top: 10px;
+  }
+
+  .JadwalPiket div h4{
+      margin-top: 18px;
+      margin-bottom: -5px;
+      border-bottom: 1px solid black;
+  }
+
+  .JadwalPiket div ol li{
+      margin-left: 10px;
+      text-align: left;
+      border-bottom: 1px solid black;
+      margin-right: 25px;
+  }
+
+  .VideoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 90%;
+    height: 220px;
+    border-radius: 10px;
+  }
+
+  .VideoLebaran{
+    transform: translateY(20%);
+  }
+
+  .VideoLebaran div video {
+    transform: translateY(-10%);
+  }
+
+  .VideoLebaran div h3 {
+    transform: translateY(-140%);
+  }
+
+  .FotoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 90%;
+    height: 215px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .FotoLebaran{
+    transform: translateY(45%);
+  }
+
+  .FotoLebaran div img{
+    height: auto;
+    transform: translateY(-10%);
+  }
+
+  .FotoLebaran div h3 {
+    transform: translateY(-150%);
+  }
+}
+
+/*Ini Media Query Tablet*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .JudulHalaman {
+    transform: translate(60%);
+  }
+
+  .Tombol2 {
+    transform: translate(60%, 0%);
+  }
+
+  .Jadwal {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 60px;
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+
+  #jadwalContainer {
+    height: 500px;
+  }
+  
+  .jadwalTabel {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -105%);
+    width: 500px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  audio {
+    width: 80%;
+  }
+
+  .Musik {
+    height: 10px;
+  }
+
+  .MusikHP {
+    display: none;
+  }
+
+  .MusikTablet {
+    width: 300px;
+    transform: translate(3%, -170%);
+  }
+
+  .MusikLaptop {
+    display: none;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #5e56ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  audio::-webkit-media-controls-pause-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #5e56ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Bagian2 {
+    width: 90%;
+    height: 2650px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .NamaSiswa div{
+    width: 200px;
+    height: auto;
+    background-color: red;
+    border: 3px solid black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }  
+
+  .NamaSiswa div ul li{
+    text-align: left;
+    font-size: 90%;
+  }
+  
+  .VideoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 600px;
+    height: 360px;
+    border-radius: 10px;
+  }
+
+  .VideoLebaran{
+    width: 100%;
+    height: 725px;
+  }
+
+  .NamaVideo {
+    margin-top: 15%;
+  }
+
+  .VideoLebaran div video{
+    width: 500px;
+    height: 300px;
+    transform: translate(0%, 2%);
+  }
+
+  .VideoLebaran div h3 {
+    transform: translate(0%, -10%);
+  }
+
+  .Video2 {
+    transform: translate(0%, 5%);
+  }
+
+  .FotoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 600px;
+    height: 360px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .FotoLebaran{
+      width: 100%;
+      height: 400px;
+  }
+
+  .FotoLebaran div img{
+      width: 520px;
+      height: auto;
+  }
+
+  .Foto {
+    margin-top: 100px;
+  }
+
+  .JadwalPiket{
+      width: 100%;
+      height: 300px;
+      display: inline-block;
+  }
+
+  .JadwalPiket div{
+      display: inline-block;
+      width: 200px;
+      height: auto;
+      border: 3px solid black;
+      margin-top: 10px;
+  }
+
+  .JadwalPiket div h4{
+      margin-top: 18px;
+      margin-bottom: -5px;
+      border-bottom: 1px solid black;
+  }
+
+  .JadwalPiket div ol li{
+      margin-left: 10px;
+      text-align: left;
+      border-bottom: 1px solid black;
+      margin-right: 25px;
+  }
+}
+
+/*Ini Media Query Laptop 1*/
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .Musik {
+    width: 30%;
+    height: 5px;
+  }
+
+  .MusikHP {
+    display: none;
+  }
+
+  .MusikTablet {
+    display: none;
+  }
+
+  .MusikLaptop {
+    transform: translate(3%, -173%);
+  }
+
+  audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #ff5656;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  audio::-webkit-media-controls-pause-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #ff5656;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Tombol2 {
+    transform: translate(60%, 0%);
+    font-size: 17px;
+  }
+
+  .Jadwal {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 60px;
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+
+  #jadwalContainer {
+    height: 700px;
+  }
+
+  .jadwalTabel {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 700px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .Bagian2 {
+    width: 90%;
+    height: 1300px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .NamaSiswa div{
+    width: 170px;
+    height: auto;
+    background-color: red;
+    border: 3px solid black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }  
+
+  .NamaSiswa div ul li{
+    text-align: left;
+    font-size: 10px;
+  }
+
+  .VideoLebaran{
+    width: 100%;
+    height: 400px;
+  }
+  
+  .VideoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 45%;
+    height: 75%;
+    border-radius: 10px;
+  }
+  
+  .VideoLebaran div h3{
+    transform: translate(0%, -170%);
+  }
+  
+  .VideoLebaran div video{
+    width: 370px;
+    height: 250px;
+    transform: translate(0%, -10%);
+  }
+
+  .FotoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 45%;
+    height: 270px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .FotoLebaran{
+      width: 100%;
+      height: 400px;
+      transform: translate(0%, -15%);
+  }
+
+  .FotoLebaran div img{
+      width: 370px;
+      height: auto;
+  }
+
+  .JadwalPiket{
+      width: 100%;
+      height: 300px;
+      display: inline-block;
+  }
+
+  .JadwalPiket div{
+      display: inline-block;
+      width: 170px;
+      height: auto;
+      border: 3px solid black;
+      margin-top: 10px;
+  }
+
+  .JadwalPiket div h4{
+      margin-top: 18px;
+      margin-bottom: -5px;
+      border-bottom: 1px solid black;
+  }
+
+  .JadwalPiket div ol li{
+      margin-left: 10px;
+      text-align: left;
+      border-bottom: 1px solid black;
+      margin-right: 25px;
+  }
+}
+
+/*Ini Media Query Laptop 2*/
+@media (min-width: 1440px) {
+  .Musik {
+    width: 30%;
+    height: 3px;
+  }
+
+  .MusikHP {
+    display: none;
+  }
+
+  .MusikTablet {
+    display: none;
+  }
+
+  .MusikLaptop {
+    transform: translate(3%, -173%);
+  }
+
+  .Tombol2 {
+    transform: translate(60%, 0%);
+    font-size: 20px;
+    width: 30px;
+  }
+
+  audio::-webkit-media-controls-play-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #56d2ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  audio::-webkit-media-controls-pause-button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #56d2ff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .Jadwal {
+    display: none;
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    margin-top: 60px;
+    border: 5px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+  }
+
+  #jadwalContainer {
+    height: 700px;
+  }
+
+  .jadwalTabel {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    width: 1000px;
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .Bagian2 {
+    width: 90%;
+    height: 1450px;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border: 4px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .NamaSiswa div{
+    width: 190px;
+    height: auto;
+    background-color: red;
+    border: 3px solid black;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }  
+
+  .NamaSiswa div ul li{
+    text-align: left;
+    font-size: 90%;
+  }
+
+  .VideoLebaran{
+    width: 100%;
+    height: 400px;
+  }
+  
+  .VideoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 45%;
+    height: 90%;
+    border-radius: 15px;
+  }
+  
+  .VideoLebaran div h3{
+    transform: translate(0%, -200%);
+  }
+  
+  .VideoLebaran div video{
+    width: 450px;
+    height: 320px;
+    transform: translate(0%, -10%);
+  }
+
+  .FotoLebaran div{
+    background-color: red;
+    border: 2px solid black;
+    display: inline-block;
+    width: 45%;
+    height: 350px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+
+  .FotoLebaran{
+      width: 100%;
+      height: 400px;
+  }
+
+  .FotoLebaran div img{
+      width: 500px;
+      height: auto;
+  }
+
+  .JadwalPiket{
+      width: 100%;
+      height: 300px;
+      display: inline-block;
+  }
+
+  .JadwalPiket div{
+      display: inline-block;
+      width: 190px;
+      height: auto;
+      border: 3px solid black;
+      margin-top: 10px;
+  }
+
+  .JadwalPiket div h4{
+      margin-top: 18px;
+      margin-bottom: -5px;
+      border-bottom: 1px solid black;
+  }
+
+  .JadwalPiket div ol li{
+      margin-left: 10px;
+      text-align: left;
+      border-bottom: 1px solid black;
+      margin-right: 25px;
+  }
+}
